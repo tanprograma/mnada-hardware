@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="app.mjs" type="module"></script>
+    <link rel="stylesheet" href="column.css" />
+    <link rel="stylesheet" href="./style/form.css" />
+    <title>FORM</title>
+  </head>
+  <body>
+    <section id="home" class="column-flexed">
+      <div id="navigation">
+        <a href="#saleProduct"><button>SALE</button></a>
+        <a href=""><button>ADD</button></a>
+        <a href=""><button>ACCOUNTS</button></a>
+        <a href=""><button>STORE</button></a>
+    
+      </div>
+      <div id="mainBody">
+        MAIN BODY GOES HERE
+      </div>
+    </section>
+    <section id="sale-section" class="sections column-flexed">
+      <section class="statistics">
+        <div class="major-statistic">main statistic</div>
+        <div class="otherStatistics">other</div>
+        <div class="otherStatistics">other</div>
+        <div class="otherStatistics">other</div>
+        <div class="otherStatistics">other</div>
+      </section>
+      <section class="main column-flexed" id="saleProduct">
+        <div class="section1">
+      
+          <a href="cart.html" class="links" id="cartLink">
+             <button>view cart</button>
+              
+          </a>
+          <a href="cart.html" class="links"  id="cartHeader">
+            <button>
+              items in cart: <span id="cart">0</span>
+            </button>
+            
+          </a>
+          <a href="cart.html" class="links"  id="cartHeader">
+            <button>
+              value: <span id="cartValue">0</span>
+            </button>
+            
+          </a>
+          <a href="#home" class="links"  id="cartHeader">
+            <button>home</button>
+            
+          </a>
+        </div>
+
+        </div>
+        <div class="section2">
+          <h3 id="formheader">fill the products</h3>
+
+          <form action="" method="post">
+            <input
+              list="products"
+              placeholder="product"
+              name="product"
+              autocomplete="off"
+            />
+            <datalist id="products">
+              <option value="select product"></option>
+            </datalist>
+            <input
+              type="text"
+              placeholder="unit"
+              name="unit"
+              autocomplete="off"
+            />
+            <input
+              type="number"
+              placeholder="price"
+              name="price"
+              autocomplete="off"
+            />
+            <input
+              type="number"
+              placeholder="quantity"
+              name="quantity"
+              autocomplete="off"
+            />
+            <button id="submit">SUBMIT</button>
+            <!-- <input type="submit" value="SUBMIT" name="submit" /> -->
+          </form>
+        </div>
+        <div class="section3">
+          <h1>the cart is available here</h1>
+          <table>
+            <thead>
+              <tr>
+                <th>item</th>
+                <th>unit</th>
+                <th>quantity</th>
+                <th>price</th>
+                <th>subtotal</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+        <div class="section4">
+          <button>CHECKOUT</button>
+        </div>
+      </section>
+    </section>
+  </body>
+</html>
