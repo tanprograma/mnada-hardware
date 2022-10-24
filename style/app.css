@@ -1,0 +1,83 @@
+/* general styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  border: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  background-color: brown;
+}
+
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+/* end general styles */
+/* start home styles */
+#home {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: rgb(243, 241, 241);
+}
+header {
+  flex: 0 0 20%;
+}
+.mission {
+  flex: 0 0 40%;
+  text-align: center;
+}
+.portrait {
+  flex: 0 0 40%;
+  background-color: black;
+  display: flex;
+  flex-flow: row nowrap;
+  /* overflow-x: scroll; */
+  overflow-y: hidden;
+
+  border-radius: 5px;
+}
+.portrait::-webkit-scrollbar {
+  display: none;
+}
+
+/* logo styles */
+.logo h2,
+.logo h3 {
+  text-align: center;
+}
+.logo {
+  background-color: rgb(223, 91, 91);
+  height: 60%;
+  color: white;
+  font-style: oblique;
+}
+/* end logo */
+/* navigation styles */
+nav {
+  height: 40%;
+}
+nav ul {
+  background-color: burlywood;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 100%;
+}
+/* end navigation */
+/* portrait */
+.card {
+  flex: 0 0 50%;
+  border: 2px solid gold;
+  margin: 2px;
+  border-radius: 5px;
+}
+/* end  home styles */
