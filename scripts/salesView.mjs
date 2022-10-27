@@ -47,7 +47,7 @@ class SalesView {
   data;
   constructor(viewSelector, storageKey, value) {
     this.element = document.querySelector(viewSelector);
-    this.stat = document.querySelector(`${viewSelector} .major-statistic`);
+    this.stat = document.querySelector(`${viewSelector} #total-sales`);
     this.data = value;
     this.storageKey = storageKey;
   }
@@ -63,7 +63,7 @@ class SalesView {
   }
   loadView() {
     this.stat.innerHTML = "";
-    this.stat.append(`total sales ${this.amount}`);
+    this.stat.append(`total sales : ${this.amount}`);
   }
   static fetchStorage(storageKey) {
     if (!window.localStorage.getItem(storageKey)) {

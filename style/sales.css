@@ -1,0 +1,121 @@
+#sales {
+  height: 100vh;
+  background-color: blueviolet;
+  justify-content: flex-start;
+}
+
+#sales .cart {
+  flex: 0 0 100%;
+  background-color: bisque;
+}
+#sales nav {
+  flex: 0 0 5%;
+}
+#sales h3 {
+  flex: 0 0 5%;
+}
+#sales form {
+  flex: 0 0 50%;
+}
+#sales .table-section {
+  flex: 0 0 30%;
+}
+#sales .checkout-section {
+  flex: 0 0 10%;
+}
+/* form styling */
+form {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  /* margin: 2px; */
+}
+input,
+button[id="submit"] {
+  margin: 5px;
+  padding: 0.5px;
+  height: 2em;
+  font-size: 1.2em;
+}
+input {
+  border: 2px black;
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+}
+input:hover {
+  border-bottom: 2px solid rgb(167, 167, 238);
+  border-left: 2px solid rgb(167, 167, 238);
+}
+
+input,
+button[id="submit"] {
+  width: 50%;
+}
+span[id="cartValue"] {
+  width: 30px;
+}
+button[id="submit"] {
+  border: 0px;
+  background-color: white;
+}
+button[id="submit"]:hover {
+  background-color: black;
+  color: white;
+}
+input::placeholder {
+  text-align: center;
+}
+#formheader {
+  text-align: center;
+  background-color: rgb(161, 160, 157);
+}
+
+/* section 3 styles */
+.table-section {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+.table-section h3 {
+  width: 100%;
+  background-color: cadetblue;
+  text-align: center;
+}
+table {
+  table-layout: fixed;
+  border-collapse: collapse;
+  min-width: 400px;
+  border: 2px solid rgb(184, 148, 184);
+}
+thead tr {
+  /* width: 400px; */
+  background-color: brown;
+}
+thead tr th,
+tbody tr td {
+  text-align: left;
+  padding: 3px;
+}
+thead th:nth-child(1) {
+  width: 30%;
+}
+tbody tr:nth-of-type(odd) {
+  background-color: rgb(241, 221, 221);
+}
+
+.checkout-section button {
+  width: 100%;
+  height: 100%;
+}
+.checkout-section button:hover {
+  background-color: rgba(97, 236, 42, 1);
+}
+
+/* table styles */
+table {
+  display: table;
+  max-height: 150px;
+  overflow-y: scroll;
+  /* width: 100%; */
+}

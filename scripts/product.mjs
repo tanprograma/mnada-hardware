@@ -1,11 +1,3 @@
-import { CartView } from "./cartView.mjs";
-const dependencies = {
-  cartView: document.querySelector("#cart"),
-  cart: [],
-  table: document.querySelector("table"),
-  chekoutBtn: document.querySelector(".section4 button"),
-  // CartViewClass: CartView,
-};
 class Form {
   constructor(selector, data) {
     this.product = document.querySelector(`${selector} input[name="product"]`);
