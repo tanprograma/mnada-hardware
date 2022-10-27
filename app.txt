@@ -1,0 +1,3 @@
+design
+-homepage is designed into three sections: header(20%),vision and portrait (40% each)
+-some spacific styling for each one

@@ -20,11 +20,13 @@ img {
   height: 100%;
   width: 100%;
 }
+.column-flexed {
+  display: flex;
+  flex-direction: column;
+}
 /* end general styles */
 /* start home styles */
 #home {
-  display: flex;
-  flex-direction: column;
   height: 100vh;
   background-color: rgb(243, 241, 241);
 }
@@ -62,7 +64,7 @@ header {
 }
 /* end logo */
 /* navigation styles */
-nav {
+#home nav {
   height: 40%;
 }
 nav ul {
@@ -81,3 +83,9 @@ nav ul {
   border-radius: 5px;
 }
 /* end  home styles */
+
+/* sales */
+#sales {
+  height: 200vh;
+  background-color: blueviolet;
+}
